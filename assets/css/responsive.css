@@ -1,0 +1,219 @@
+/*
+Template Name: Fladina , Resume Template
+Template URI:
+Author:
+Author URI:
+Description:
+Version: 1.0
+License:
+*/
+
+/*
+  Note: All Licenses and copyrights of Frameworks and other Plugins are documentd
+*/
+
+
+/*
+  @media For :
+  A-Large Screen Only
+  B-Middle Screens
+  C-Small Screens
+  D-extra small Screen
+*/
+
+/*#####################################################################################################*/
+/*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px){
+  /*----------------------------------------------------------------------------------*/
+  /*---------------------------    Header Navbar (Navigation)  -----------------------*/
+  /*----------------------------------------------------------------------------------*/
+  .nav  {
+      display: block;
+      float: none;
+      margin: 0px auto;
+      width: 100%;
+      text-align: center;
+  }
+  .nav>li {
+    position: relative;
+    display: inline-block;
+    float: none;
+  }
+
+
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*#####################################################################################################*/
+
+
+
+
+
+
+
+/*#####################################################################################################*/
+/*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*----------------------------------------------------------------------------------*/
+  /*---------------------------    Resume Section    ---------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  .left-job::before , .right-job::before {
+    display: none;
+  }
+  .left-job , .right-job , .job-details-left , .job-details-right {
+    border: 0px;
+   }
+  .company-name-content ,  .work-history-body , .year-since  {
+    text-align: center;
+  }
+  .container>.navbar-header {
+    padding: 0px 20px;
+  }
+  body{background: green;}
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*#####################################################################################################*/
+
+
+
+
+
+
+
+/*#####################################################################################################*/
+/*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+
+    /*----------------------------------------------------------------------------------*/
+    /*--------------------------- Home (Hero Banner )  ---------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    .hero-contents {
+       padding: 0px 0px 40px 0px ;
+       text-align: left;
+     }
+    .col-sm-7 > .hero-contents {
+        padding-top: 40px;
+    }
+    .hero-contents > a.download-cv-btn {
+       margin: 0px auto;
+       display: block;
+       text-align: center;
+       padding: 10px 15px;
+     }
+    .navbar-container {
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .container>.navbar-header {
+      padding: 0px 20px;
+    }
+    /*----------------------------------------------------------------------------------*/
+    /*---------------------------    About Me Section  ---------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    .col-xs-sm-fit-contents{
+      padding: 10px;
+    }
+
+
+    /*----------------------------------------------------------------------------------*/
+    /*---------------------------    Resume Section    ---------------------------------*/
+    /*----------------------------------------------------------------------------------*/
+    .full-col {
+        width: 37%;
+    }
+    .first-row-container:after , .rounded-element:after , .education-block-title::after ,
+    .dashed-element::before ,   .first-row-container::before , .middle-table ,
+     .certifications-body::after ,.skills-body::after , .second-row-container::after ,
+     .right-arrow::after , .left-arrow::after , .left-job::before , .right-job::before
+      {
+        display: none;
+      }
+    .dashed-layout-sides {
+     padding-left: 0px !important;
+     padding-right: 0px !important;
+    }
+    .education-block-title::before {
+      bottom: -8px;
+      height: 10px;
+    }
+    .fit-header-section , .year-since, .work-history-body {
+      text-align: center;
+    }
+    .left-job ,.right-job, .job-details-left , .job-details-right {
+      border: 0px;
+    }
+    body{background: yellow;}
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*#####################################################################################################*/
+
+
+
+
+
+
+
+
+/*#####################################################################################################*/
+/*-----------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+  .container>.navbar-header {
+    padding: 0px 20px;
+  }
+  /*----------------------------------------------------------------------------------*/
+  /*--------------------------- Home (Hero Banner )  ---------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  .hero-contents {
+    padding: 0px 0px 40px 0px ;
+    text-align: left;
+  }
+  .hero-contents > a.download-cv-btn {
+    margin: 0px;
+    display: inline-block;
+  }
+  .navbar-container {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .fit-contents img {
+    width: 98%;
+    margin: 0px auto;
+    display: block;
+  }
+
+  /*----------------------------------------------------------------------------------*/
+  /*---------------------------    About Me Section  ---------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  .col-xs-sm-fit-contents{
+    padding: 10px;
+  }
+
+  /*----------------------------------------------------------------------------------*/
+  /*---------------------------    Resume Section    ---------------------------------*/
+  /*----------------------------------------------------------------------------------*/
+  .first-row-container:after , .rounded-element:after , .education-block-title::after ,
+  .dashed-element::before ,   .first-row-container::before , .middle-table ,
+   .certifications-body::after ,.skills-body::after , .second-row-container::after ,
+   .right-arrow::after , .left-arrow::after , .left-job::before , .right-job::before
+    {
+      display: none;
+    }
+  .dashed-layout-sides {
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+  }
+  .education-block-title::before {
+    bottom: -8px;
+    height: 10px;
+  }
+  .fit-header-section , .year-since, .work-history-body {
+    text-align: center;
+  }
+  .left-job ,.right-job, .job-details-left , .job-details-right {
+    border: 0px;
+  }
+  body{background: blue;}
+}
+/*-----------------------------------------------------------------------------------------------------*/
+/*#####################################################################################################*/
