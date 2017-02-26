@@ -217,10 +217,7 @@ License:
   background: #fff;
 }
 
-.img-shape::before ,
-.img-shape::after {
-  background:  #5cb85c;
-}
+
 .img-block {
-  border-color: #5cb85c;
+  border-color: #fff;
 }
