@@ -145,6 +145,8 @@ h5 {
 }
 /* This For All Section That has Background Image */
 .section-bg {
+  background-position:  center top !important;
+  background-repeat: no-repeat !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   width: 100%;
@@ -243,6 +245,14 @@ p.paragraphs {
     border-bottom: 2px dashed #5cb85c;
     display: block;
 }
+/* Masks */
+.section-mask-white-color , .section-mask-teal-color {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+}
 /*
 .col-update {
   padding: 0px;
@@ -304,61 +314,7 @@ margin: 0px auto;
 /*-------------------------------------------------------------------------------------------
        2- About Me Section
 --------------------------------------------------------------------------------------------*/
-/* Social Media Container */
-.social-media-group {
-  width: 90%;
-  display: block;
-  margin: 0px auto; ;
-  height: auto;;
-  overflow: hidden;
-  position: absolute;
-  z-index: 51;
-  bottom:0px;
-  left: 0px;
-  right: 0px;
-}
-/* Social Media Menu */
-.social-media-group ul {
-  display: inline-block;;
-  overflow: hidden;;
-  list-style: none;
-  padding: 0px;
-  margin: 0px auto;;
-  text-align: center;
-  width: 100%;
-}
-/* Social Media Menu li */
-.social-media-group ul li {
-  display: inline-block;
-  overflow: hidden;
-  margin: 3px;
-}
-.social-media-group ul li:first-child {
-  margin-left: 0px;
-}
-/* Social Media Menu Achors */
-.social-media-group ul li a {
-  display: block;
-  height: 35px;
-  width: 35px;
-  border-radius: 17px;
-  line-height: 30px;
-  padding: 2px 10px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-/** Resize Icons **/
-.social-media-group ul li a i {
-  color: #fff;
-  font-size: 15px;
-}
-.social-media-group ul li:last-child a i {
-  font-size: 14px;
-}
+
 .img-block {
   border-radius: 200px 0px;
       border-width: 6px;
@@ -369,34 +325,6 @@ margin: 0px auto;
 }
 
 
-.img-shape::before {
-    content: "";
-    top: 3px;
-    left: 85%;
-    bottom: 0;
-    right: 0;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    z-index: 1;
-    display: none;
-}
-
-
-
-.img-shape::after {
-  display: none;
-    content: "";
-    /* top: 3px; */
-    left: 3%;
-    bottom: 7px;
-    right: 0px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    z-index: 1;
-
-}
 /** Container Or Block Of Buttons  **/
 .button-about-container {
   width: 100%;

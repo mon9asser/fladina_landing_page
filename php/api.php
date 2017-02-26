@@ -3,7 +3,7 @@
 class Fladina_Apis {
 
   private $replay_time = "24 Hours";
-  private $successMessage = "Your Message has been Sent Success , I will replay to you within";
+  private $successMessage = "Your Message has been Sent , I will replay to you within";
   private $email_to = "moun2030@gmail.com";
 
   /* Stop script or html tags or anything else */

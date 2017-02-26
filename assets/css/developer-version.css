@@ -25,7 +25,17 @@ License:
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+# A-  Font colors +#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-*/
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
 
-
+/* General Colors */
+.section-mask-white-color {
+  background: #fff;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.section-mask-teal-color{
+  background: rgb(0, 128, 128);
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
 /*==================> Hero (Home Section) [1-] Banner and Header  <=============== */
 
 
@@ -118,12 +128,17 @@ License:
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#  D- Background Image And Colors , Gradients #+#+#+#+#++#+#+#+#+#+##+#+#+#+#+#+#+#+#+#+#+#+#*/
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
+
 /*[1]|-------------------------------> Sections <-------------------------\*/
  /*===========> Home Section  <=============== */
  .hero-section {
-  background-color: teal; /* For IE 9 */
+   /* => Cancel Gradient Color with image
+  background-color: teal;
   background: linear-gradient(rgba(0, 128, 128, 0.68),rgba(0,0,0,0.68)), url(../images/developer-hero-bg.jpg) center top no-repeat;
   background-attachment: fixed;
+  */
+  background-image: url(../images/developer-hero-bg.jpg);
+
 }
 /*Hover element in header navbar */
 .nav>li>a:hover , .nav>li>a:focus , .nav>li>a:active {
@@ -137,6 +152,7 @@ License:
   background: linear-gradient(rgba(255, 255, 255, 0.68),rgba(255,255,255,0.68)), url(../images/developer-hero-bg.jpg) center top no-repeat;
   background-attachment: fixed;
   }
+
 /*===========> Resume Section  <=============== */
 .resume-section {
   background: #fff;
