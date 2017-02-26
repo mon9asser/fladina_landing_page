@@ -21,9 +21,8 @@ License:
   D- Borders and Line colors
 */
 
-/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
-/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+# A-  Font colors +#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-*/
-/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
+
+
 
 /* General Colors */
 .section-mask-white-color {
@@ -36,6 +35,18 @@ License:
   opacity: 0.5;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
+.section-mask-black-color{
+  background:#000;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+
+
+/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
+/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+# A-  Font colors +#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-*/
+/*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
+
+
 /*==================> Hero (Home Section) [1-] Banner and Header  <=============== */
 
 
@@ -132,13 +143,7 @@ License:
 /*[1]|-------------------------------> Sections <-------------------------\*/
  /*===========> Home Section  <=============== */
  .hero-section {
-   /* => Cancel Gradient Color with image
-  background-color: teal;
-  background: linear-gradient(rgba(0, 128, 128, 0.68),rgba(0,0,0,0.68)), url(../images/developer-hero-bg.jpg) center top no-repeat;
-  background-attachment: fixed;
-  */
-  background-image: url(../images/developer-hero-bg.jpg);
-
+     background-image: url(../images/developer-hero-bg.jpg);
 }
 /*Hover element in header navbar */
 .nav>li>a:hover , .nav>li>a:focus , .nav>li>a:active {
@@ -148,9 +153,7 @@ License:
 
  /*===========> About Us Section  <=========== */
  .about-me-section {
-  background-color: teal; /* For IE 9 */
-  background: linear-gradient(rgba(255, 255, 255, 0.68),rgba(255,255,255,0.68)), url(../images/developer-hero-bg.jpg) center top no-repeat;
-  background-attachment: fixed;
+   background-image: url(../images/developer-hero-bg.jpg);
   }
 
 /*===========> Resume Section  <=============== */
@@ -159,9 +162,7 @@ License:
 }
 /*=============> Portfolio Section <============ */
 .porfolio-section {
-  background-color: teal; /* For IE 9 */
-  background: linear-gradient(rgba(0, 0, 0, 0.68),rgba(0,0,0,0.68)), url(../images/portfolio-bg.jpg) center top no-repeat;
-  background-attachment: fixed;
+  background-image: url(../images/portfolio-bg.jpg);
 }
 /*=============> Client Section <============ */
 .clients-section{
@@ -169,9 +170,7 @@ License:
 }
 /*=============> Contact-us Section <============ */
 .contact-us-section {
-  background-color: teal; /* For IE 9 */
-  background: linear-gradient(rgba(0, 0, 0, 0.68),rgba(0,0,0,0.68)), url(../images/contact-bg.jpg) center top no-repeat;
-  background-attachment: fixed;
+ background-image: url(../images/contact-bg.jpg);
 }
 
 /*[2]|-------------------------------> Block and Container Colors <-------------------------\*/
