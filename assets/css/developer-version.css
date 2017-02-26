@@ -98,19 +98,22 @@ License:
 .mani-info-contact a i {
   font-size: 20px;
 }
+
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+# B-  Icons And small subtitle icons +#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*<<<<<<<<<< [1]- Main Icons  >>>>>>>>> */
 .headline-container-white-bg > i ,
-.work-history > i {color: #5cb85c;}
+.work-history > i , .form-results-successed {color: #5cb85c;}
 /*<<<<<<<<<< [2]- Sub-icons  >>>>>>>>> */
 .education-block-title > i ,
 .titles-in-graduation > i ,
 .graduation-block-calendar >i ,
 .middle-icon i
  {color: #fff;}
-
+.white-color-titles > i,
+.white-color-titles > span
+  {color: #fff !important;}
 
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#  D- Background Image And Colors , Gradients #+#+#+#+#++#+#+#+#+#+##+#+#+#+#+#+#+#+#+#+#+#+#*/
@@ -192,7 +195,7 @@ License:
 
 /* Layout Borders color (Solid Or Dotted Or Dashed ) */
 .dashed-layout-sides , .dotted-layout-sides , .solid-layout-sides , .first-row-container:after ,
-.second-row-container:after , .left-job , .right-job , .dashed-element::before
+.second-row-container:after , .left-job , .right-job , .dashed-element::before , .graduation-block
 {
   border-color: #5cb85c;
 }
@@ -209,4 +212,15 @@ License:
 /*Rounded Elements [ After and Before ] in   the columns */
  .rounded-element:after , .first-row-container::before {
   background:  #5cb85c;
+}
+.white-color-titles > span.headline-separator , .white-color-titles span::after , .white-color-titles span::before {
+  background: #fff;
+}
+
+.img-shape::before ,
+.img-shape::after {
+  background:  #5cb85c;
+}
+.img-block {
+  border-color: #5cb85c;
 }

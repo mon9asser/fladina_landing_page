@@ -159,12 +159,18 @@ h5 {
 }
 /* Define Padding and Margines For Columns and some Containers need to be fit */
 .fit-contents , .fit-section-container {
-  width: 100%;
+
   display: block;
    height: auto;
   margin: 15px auto;
   padding: 2px;
   position: relative;
+}
+.fit-contents {
+    width: 100%;
+}
+.fit-section-container {
+    width: 98%;
 }
 /* Headline Title For Majority Sections */
 .headline-title {
@@ -229,6 +235,7 @@ p.paragraphs {
 .fit-top-bottom-sections {
   padding-top: 50px;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .padding-bottom {
@@ -236,9 +243,17 @@ p.paragraphs {
     border-bottom: 2px dashed #5cb85c;
     display: block;
 }
-
-
-
+/*
+.col-update {
+  padding: 0px;
+margin: 0px;
+overflow: hidden;
+position: relative;
+height: 250px;
+}
+.row-right-left {
+margin: 0px auto;
+}*/
 /*#############################################################################################
                                         B- Loading Page
 #############################################################################################*/
@@ -344,7 +359,42 @@ p.paragraphs {
 .social-media-group ul li:last-child a i {
   font-size: 14px;
 }
+.img-block {
+  border-radius: 200px 0px;
+  border-width:  10px    ;
+  border-style: solid;
+  box-shadow: 0px 0px 5px 0px #888;
+  margin: 0px auto;
+}
 
+
+.img-shape::before {
+    content: "";
+    top: 3px;
+    left: 85%;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+
+}
+
+
+
+.img-shape::after {
+    content: "";
+    /* top: 3px; */
+    left: 3%;
+    bottom: 7px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+
+}
 /** Container Or Block Of Buttons  **/
 .button-about-container {
   width: 100%;
@@ -731,6 +781,12 @@ border-left-width:  20px;
     background: rgb(92,184,92);
     height: 100%;
     border-radius: 10px;
+    width:0%;
+    webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -838,15 +894,74 @@ border-left-width:  20px;
 /*-------------------------------------------------------------------------------------------
        4- Projects Section
 --------------------------------------------------------------------------------------------*/
+.slide-effect {
+background: rgba(0,0,0,0.5);
+border: 1px solid #222;
+box-shadow: 0px 0px 5px 0px #000;
+margin: 25px auto !important;
+padding: 15px;
+display:none;
+}
+.col-details {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+    padding-left: 10px;
+}
+.col-details b {
+  width: 92%;
+  display: block;
+  position: relative;
+  font-size: 25px;
+  font-family: 'Roboto' , sans-serif;
+  padding: 10px 0px 20px 0px;
+  border-bottom: 1px solid #444;
+
+}
+.col-details p {
+  width: 92%;
+  display: block;
+  position: relative;
+  font-size: 18px;
+  font-family: 'Raleway' , sans-serif;
+  padding: 25px 0px;
+
+}
+/*Image Container in Box info*/
+.portfolio-box-info {
+  height: auto;
+  background: rgba(0,0,0,0.8);
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+}
+.image-blok {
+  width: 99.9%;
+  height: auto;;
+  margin: 0px auto;
+  display: block;
+  overflow: hidden;
+  padding: 0px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img-element {
+  display: block;
+  width: 100%;
+  position: relative;
+}
 /* Project Container*/
 .portfolio-block {
-  width: 100%;
+  margin-bottom: 20px;
+  padding: 0;
   display: inline-block;;
   overflow: hidden;
   position: relative;
-  width: 250px;
-  height: 250px;
-  margin: 1px 3px;
+  width: 100%;
+  height: auto;
   cursor: pointer;
   border: 0.1em solid rgba(250,250,250,0.5);
   box-shadow: 0px 0px 5px 0px #000;
@@ -855,24 +970,34 @@ border-left-width:  20px;
 .project-mask , .project-image {
   display: block;
   overflow: hidden;
-  position: absolute;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+}
+.project-image {
+  position: relative;
+}
+.project-mask {
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
-  z-index: 2;
-  transition: all 0.7s ease-in-out;
+    position: absolute;
 }
+
 .project-mask{
   background: rgba(0, 0, 0, 0.5);
 }
 /*Project Image*/
 .project-image {
-  width: 280px;
-  height: 280px;
+
+  width: 100%;
+  height: 100%;
   z-index: 1;
   transform: scaleY(1);
 	transition: all 0.7s ease-in-out;
+}
+.project-image > img {
+  width: 100%;
 }
 /*Project Title*/ /*Project subtitles*/  /*Project Icon container*/
 .portfolio-title , .portfolio-subtitles , .portfolio-icon{
@@ -910,7 +1035,7 @@ font-size: 23px;
     right: 0px;
     position: absolute;
     z-index: 5;
-    top: 31%;
+    top: 35%;
 }
 
 .portfolio-headline-separator {
@@ -990,7 +1115,6 @@ font-size: 23px;
     left: inherit;
     width: auto;
     font-size: 25px;
-    color: red;
     text-align: center;
     text-shadow: 0px;
     filter: alpha(opacity=50);
@@ -1076,10 +1200,11 @@ padding: 17px;
   background: rgba(0,0,0,0.5);
   width: 97%;
   padding-bottom: 20px;
-  box-shadow: 0px 0px 3px 0px #222;
   padding: 25px;
   margin: 60px auto;
   border-radius: 10px;
+  border: 1px solid #222;
+  box-shadow: 0px 0px 5px 0px #000;
 }
 .input-container {
     display: block;
@@ -1112,7 +1237,8 @@ input, textarea {
     width: 98% !important;
     margin: 5px auto;
 }
-input[type="submit"] {
+#send-btn {
+    width: 98%;
     padding: 15px 20px;
     cursor: pointer;
     border: 1px solid #555;
@@ -1126,14 +1252,34 @@ input[type="submit"] {
     outline: none;
     background: rgba(0,0,0,0.5);
     color: #fff;
+    margin: 0px auto;
+    display: block;
+}
+.show-result {
+  width: 90%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  margin: 5px auto;
+  color: #fff;
 }
 
-
+.form-results {
+  color:red;
+}
+.show-result{
+  display: block;
+color: rgb(255, 255, 255);
+text-align: center;
+background: #000;
+width: 98%;
+padding: 10px;
+border-radius: 5px;
+display: none;
+}
 /*Footer */
 .footer-rights {
     color: #fff;
     padding: 30px 0px 30px 0px;
     display: block;
 }
-
- 
