@@ -193,12 +193,18 @@ $(window).scroll(function(){
         type: "POST",
         url: "php/controller.php",
         data: dataString,
+        beforeSend:function (){
+          $('.input-container > button').html('Sending ...');
+        },
         success: function (response) {
           $('.show-result').slideDown(function(){
             $(this).html(response);
+            $('.input-container > button').html('Send');
           });
 
         }
       });
     }
+
+ 
 });

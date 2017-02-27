@@ -1,12 +1,3 @@
-/*
-Template Name: Fladina , Resume Template
-Template URI:
-Author:
-Author URI:
-Description:
-Version: 1.0
-License:
-*/
 
 /*
   Note: All Licenses and copyrights of Frameworks and other Plugins are documentd
@@ -27,12 +18,12 @@ License:
 /* General Colors */
 .section-mask-white-color {
   background: #fff;
-  opacity: 0.5;
+  opacity: 0.6;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 .section-mask-teal-color{
-  background: rgb(0, 128, 128);
-  opacity: 0.5;
+  background: rgb(226, 106, 106);
+  opacity: 0.3;
   filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 .section-mask-black-color{
@@ -74,10 +65,10 @@ License:
 /*===========> Resume Section [3-] (Education - Certificates - Skills -Work History )  <=============== */
 
 /* Resume (Main Title ) */
-.resume-main-title {color: #5cb85c;}
+.resume-main-title {color: #F64747;}
 /*Certificates - Education -Skills -Work History  (All sub-Titles ) */
-.sub-title-color {color: #fff;}         /*All Subtitles in #5cb85c BG Should be White Color  or Whatever*/
-.sub-title-color-2 {color: #5cb85c ;}   /*All Subtitles in White BG Should be White #5cb85c or Whatever*/
+.sub-title-color {color: #fff;}         /*All Subtitles in #F64747 BG Should be White Color  or Whatever*/
+.sub-title-color-2 {color: #F64747 ;}   /*All Subtitles in White BG Should be White #F64747 or Whatever*/
 /*<<<<<<<<<<<<<< [1]-Education Block >>>>>>>>>>> */
 /*Title Of Calendar*/
 .graduation-block-calendar span {color: #fff;}
@@ -109,12 +100,12 @@ License:
 
 
 /*====================================> Portfolio Section <======================================= */
-.portfolio-main-title {color: #5cb85c;}
+.portfolio-main-title {color: #F64747;}
 /*====================================> Client Section <======================================= */
-.client-main-title {color: #5cb85c;}
+.client-main-title {color: #F64747;}
 /*====================================> Contact-Us Section <======================================= */
 .headline-container{
-  color: #5cb85c;
+  color: #F64747;
 }
 .mani-info-contact a i {
   font-size: 20px;
@@ -125,7 +116,7 @@ License:
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*<<<<<<<<<< [1]- Main Icons  >>>>>>>>> */
 .headline-container-white-bg > i ,
-.work-history > i , .form-results-successed {color: #5cb85c;}
+.work-history > i , .form-results-successed {color: #F64747;}
 /*<<<<<<<<<< [2]- Sub-icons  >>>>>>>>> */
 .education-block-title > i ,
 .titles-in-graduation > i ,
@@ -143,17 +134,17 @@ License:
 /*[1]|-------------------------------> Sections <-------------------------\*/
  /*===========> Home Section  <=============== */
  .hero-section {
-     background-image: url(../images/developer-hero-bg.jpg);
+     background-image: url(../images/chef-hero-bg.jpg);
 }
 /*Hover element in header navbar */
 .nav>li>a:hover , .nav>li>a:focus , .nav>li>a:active {
   background: rgba(255,255,255,0.1);
 }
-.navbar-container { background: #5cb85c;} /* Background Of navebar*/
+.navbar-container { background: #F64747;} /* Background Of navebar*/
 
  /*===========> About Us Section  <=========== */
  .about-me-section {
-   background-image: url(../images/developer-hero-bg.jpg);
+   background-image: url(../images/chef-hero-bg.jpg);
   }
 
 /*===========> Resume Section  <=============== */
@@ -162,14 +153,14 @@ License:
 }
 /*=============> Portfolio Section <============ */
 .porfolio-section {
-  background-image: url(../images/portfolio-bg.jpg);
+  background-image: url(../images/portfolio-chef-bg.jpg);
 }
 /*=============> Client Section <============ */
 .clients-section{
   background: #fff;
 }
 .carousel-indicators li {
-  background: #5cb85c;
+  background: #F64747;
 }
 .carousel-indicators li.active{
  background: #049904;
@@ -199,16 +190,16 @@ License:
 /*Work History Small Circles*/
 .left-job::before ,
 .right-job::before
-{background: #5cb85c;}
+{background: #F64747;}
 
 /*Skill Progress Bar*/
 /*1- Main Progress */
 .skill-element-ruler {
-  background: rgba(92,184,92,0.4);
+  background: rgba(226, 106, 106,0.4);
 }
  /*2- Percentage Of Progress bar*/
 .fill-indicator {
-      background: rgb(92,184,92);
+      background: #F64747;
 }
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#++#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#-#*/
 /*+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#  E- Borders and Lines color  +#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#+#*/
@@ -218,21 +209,21 @@ License:
 .dashed-layout-sides , .dotted-layout-sides , .solid-layout-sides , .first-row-container:after ,
 .second-row-container:after , .left-job , .right-job , .dashed-element::before , .graduation-block
 {
-  border-color: #5cb85c;
+  border-color: #F64747;
 }
 /*Right Arrow => certifications Section */
 .right-arrow::after , .certifications-body::after {
-   border-left-color: #5cb85c;
+   border-left-color: #F64747;
  }
  /*Left Arrow => Skill Section */
 .left-arrow::after , .skills-body::after {
-  border-right-color: #5cb85c;
+  border-right-color: #F64747;
 }
 /* Title Lines are included Three levels (Bold - Thin - Lighter) */
 .headline-separator , .headline-separator::before , .headline-separator::after ,
 /*Rounded Elements [ After and Before ] in   the columns */
  .rounded-element:after , .first-row-container::before {
-  background:  #5cb85c;
+  background:  #F64747;
 }
 .white-color-titles > span.headline-separator , .white-color-titles span::after , .white-color-titles span::before {
   background: #fff;
@@ -243,4 +234,17 @@ License:
 
 .img-block {
   border-color: #fff;
+}
+.img-shape{
+margin-top: 50px;
+}
+/*New Colors */
+.certifications-body , .skills-body{
+  border-color: #F64747;
+}
+.section-icon , .carousel-control.left , .carousel-control.right {
+  color: #F64747;
+}
+.mani-info-contact a, .mani-info-contact a:hover, .mani-info-contact a:focus{
+  background:#F64747;
 }
