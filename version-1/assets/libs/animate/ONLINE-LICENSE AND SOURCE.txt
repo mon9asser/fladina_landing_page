@@ -1,0 +1,5 @@
+Online link
+https://daneden.github.io/animate.css/
+
+Online LICENSE
+https://raw.githubusercontent.com/daneden/animate.css/master/LICENSE

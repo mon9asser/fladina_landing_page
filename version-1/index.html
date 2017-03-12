@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+  <head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <title>Fladina ,Resume Template</title>
+
+   <!-- import all libs in one file -->
+   <link href="assets/css/import.css" rel="stylesheet">
+   <!-- Main Stylesheet -->
+   <link href="assets/css/index.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- ++++++++++++++++++++++++  Loading Page +++++++++++++++++++++++++++ -->
+    <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <div class="loading-page">
+      <div class="loading">
+        <div class="point point1"></div>
+        <div class="point point2"></div>
+        <div class="point point3"></div>
+        <div class="point point4"></div>
+        <div class="point point5"></div>
+        <div class="point point6"></div>
+        <div class="point point7"></div>
+        <div class="point point8"></div>
+        <div class="point point9"></div>
+        <div class="point point10"></div>
+        <div class="point point11"></div>
+        <div class="point point12"></div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Hero Banner -->
+    <div class="heroSection">
+        <div class="container text-right">
+          <a href="../documentation/index.html" data-aos="fade-down" data-aos-easing="linear"   data-aos-duration="500" href="#" class="but-btn"><i class="fa fa-code"></i>Documentation</a>
+          <a data-aos="fade-down" data-aos-easing="linear"   data-aos-duration="500" href="#" class="but-btn"><i class="fa fa-opencart"></i>Buy Now</a>
+        </div>
+        <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1000" class="containerData">
+            <h1>
+              <span>  Fladina </span>
+              <p>Professional Personal Portfolio Template</p>
+            </h1>
+            <div class="btn-group">
+                <a id="exploler"  href="#" class="but-btn"><i class="fa fa-location-arrow"></i>Explore Demos</a>
+            </div>
+
+        </div>
+    </div>
+    <div id="image-blk" class="container-2 container-fluid">
+        <div class="container">
+          <div class="row">
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1000" onclick="return goTo('demo-2.html');" class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-1.jpg" />
+              <strong class="title">Demo 1 </strong>
+            </div>
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1200" onclick="return goTo('demo-1.html');" class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-3.jpg" />
+              <strong class="title">Demo 2 </strong>
+            </div>
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1400" onclick="return goTo('demo-3.html');" class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-2.jpg" />
+              <strong class="title">Demo 3 </strong>
+            </div>
+
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1600" onclick="return goTo('demo-5.html');"  class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-4.jpg" />
+              <strong class="title">Demo 4 </strong>
+            </div>
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="1800" onclick="return goTo('demo-4.html');"  class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-5.jpg" />
+              <strong class="title">Demo 5 </strong>
+            </div>
+            <div data-aos="fade-up" data-aos-easing="linear"   data-aos-duration="2000" onclick="return goTo('demo-6.html');"  class="col-md-4 col-xs-12 col-sm-6 pis">
+              <img class="img-responsive" src="assets/img/model-6.jpg" />
+              <strong class="title">Demo 6 </strong>
+            </div>
+           </div>
+       </div>
+    </div>
+
+
+
+
+     <!-- Minified libraries  -->
+	<!-- Jquery -->
+    <script src="assets/libs/jquery/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<!-- Inview -->
+    <script src="assets/libs/inview/jquery.inview.min.js" type="text/javascript"></script>
+	<!-- Bootstrap file -->
+	<script src="assets/libs/bootstrap-3.0.0/js/bootstrap.min.js" type="text/javascript"></script>
+	<!-- Aos master file -->
+	<script src="assets/libs/aos-master/aos.js" type="text/javascript"></script>
+    <!-- Functions File -->
+    <script type="text/javascript">
+       $(document).ready(function(){
+         $('#exploler').click(function(){
+           $('html , body').animate({
+             scrollTop:$('#image-blk').offset().top
+           });
+         });
+          setTimeout(function(){
+            $('.loading-page').fadeOut();
+          },2000);
+          AOS.init();
+       });
+
+        function goTo(src){
+          window.location.href = src ;
+        }
+    </script>
+  </body>
+</html>

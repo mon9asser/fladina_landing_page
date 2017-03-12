@@ -1,0 +1,314 @@
+:root{
+
+ --general-width:100%;
+
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+.main-block-containers{
+  width:var(--general-width);
+
+}
+ @import url('https://fonts.googleapis.com/css?family=Oswald|Raleway|Roboto+Slab');
+
+
+
+.section-containers {
+  width:100%;
+  margin: 0px auto;;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.section-containers::after{
+    width: 100%;
+  clear: both;
+}
+
+.left-container {
+  width: auto;
+  margin: 10px auto;
+  padding: 10px;
+  display: block;
+}
+.headline-left a ,.headline-left a:hover{
+  cursor: pointer;
+  color: #fff;
+  color:rgba(255, 0, 0, 0.5);;
+}
+.headline-left span {
+
+  display: block;
+ font-size: 12px;
+ font-weight: lighter;
+ margin-top: 5px;
+}
+.headline-left {
+border-bottom: 1px solid #555;
+width: 90%;
+margin: 0px auto;
+padding: 40px 10px;;
+line-height: 1;
+
+}
+.footer-title {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  color: #fff;
+  font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
+  width: 85%;
+  background: rgba(255, 0, 0, 0.5);;
+}
+.footer-title  span ,.title-theme{
+    font-family: 'Oswald', sans-serif;
+
+  letter-spacing:0px;
+}
+ .menu {
+   padding: 0px;
+  margin: 0px auto;
+  width: 90%;
+  display: block;
+  background: #333;
+  border-radius: 0px;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 5px;
+ }
+ .menu-ul {
+   display: block;
+   width: 100%;
+   padding: 5px 0px;
+   position: relative;
+   margin: 0px;
+   line-height: 1.4;
+ }
+
+.menu-ul li {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+.menu-ul li a {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding:7px 20px;
+  color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding-bottom: 8px;
+  padding-top: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  transition: all , 0.5s , linear ;
+  -o-transition: all , 0.5s , linear ;
+  -webkit-transition: all , 0.5s , linear ;
+}
+.menu-ul li a:hover {
+background: rgba(255, 0, 0, 0.5);
+}
+.menu-ul li a.active {
+  background: rgba(255, 0, 0, 0.5);
+}
+.menu-ul li:last-child a{
+  border-bottom: 0px solid #666;
+}
+
+.right-part {
+      position: absolute;
+      right: 18px;
+      padding-left: 10px;
+      left: 315px;
+      padding-bottom: 800px;
+      height: auto;
+      z-index: 1;
+      display: block;
+      padding: 0px 20px;
+}
+.left-part  {
+  moz-box-shadow: 0 0 6px rgba(3,3,3,0.6);
+  -webkit-box-shadow: 0 0 6px rgba(3,3,3,0.6);
+  box-shadow: 0 0 6px rgba(3,3,3,0.6);
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 315px;
+  height: 100%;
+  min-height: 100%;
+  z-index: 100;
+  background: #222;
+}
+.headline-left {
+  color: #fff;
+}
+
+a , a:active , a:hover , a:focus {
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+}
+.headline-left {
+  font-family: 'Oswald', sans-serif;
+}
+h3 {
+      font-size: 22px;
+}
+.headline-left span {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+.sections {
+  width: 100%;
+      display: block;
+      overflow: hidden;
+      position: relative;
+      padding: 5px;
+      padding: 100px 5px;
+      font-size: 18px;
+}
+.headline-section {
+  width: 95%;
+padding: 25px;
+margin: 0px auto;
+line-height: 1.2;
+}
+.headline-section h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #c92727;
+    text-align: center;
+}
+.headline-section h1 span {
+  background: transparent;
+   padding: 2px 5px 0px 0px;
+   margin: 0px;
+   border-radius: 5px;
+   font-size: 70px;
+   width: 100%;
+   display: block;
+   letter-spacing: 12px;
+}
+.headline-section h1 font{
+  font-size: 15px;
+    display: block;
+    color: #222;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 10px;
+    text-align: center;
+}
+span.ntd {
+  color: red;
+  display: inline !important;
+  font-size: 15px !important;
+  padding: 2px !important;
+  text-align: center;
+  margin: 0px auto !important;
+  vertical-align: middle;
+  position: relative;
+
+}
+.titleSection {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.titleSection b {
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+}
+.doc-menus {
+  display: block;
+  position: relative;
+  list-style: square;
+  padding: 0px;
+  margin: 0px;
+}
+.doc-menus li b {
+  font-family: 'Oswald', sans-serif;
+}
+.section-menu {
+  display: block;
+  position: relative;
+  width: auto;
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+.section-menu li {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+.section-menu li a {
+  display: inline;
+  cursor: pointer;
+  padding: 8px;
+
+}
+.section-menu li a:hover {
+   color: #c92727;
+}
+.srchname {
+  background: #222;
+  font-size: 15px;
+  display: inline;
+  color: #b58900;
+
+  padding: 2px 5px;
+}
+pre , code {
+  margin: 0px;
+  padding: 0px;
+}
+.title-heightlight{
+  background: tomato;
+      font-size: 15px;
+      display: inline;
+      color: #fff;
+      padding: 2px 5px;
+}
+.main-colors {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.color {
+  width: 30%;
+  display: inline;
+  position: relative;
+  float: left;
+}
+.color i {
+  width: 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+}
+.color-block {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 20px auto;
+
+}
+
+ .headline-right{
+   background: tomato;
+   color: #fff;
+ }
+ .footer-- {
+   width: 60%;
+   margin: 0px auto;;
+ }

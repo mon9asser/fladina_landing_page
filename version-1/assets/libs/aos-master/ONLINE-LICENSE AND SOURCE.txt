@@ -1,0 +1,5 @@
+Online link
+https://michalsnik.github.io/aos/
+
+Online LICENSE
+https://github.com/michalsnik/aos/blob/master/LICENSE
