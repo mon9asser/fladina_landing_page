@@ -1232,13 +1232,13 @@ text-align: center;
 --------------------------------------------------------------------------------------------*/
 
 /* First Row show the information like phone number and email and so on*/
-.mani-info-contact , .ForIe {
+.mani-info-contact , .for-ie {
     display: block;
     overflow: hidden;
     margin: 0px auto;
     width: 95%;
 }
-.ForIe {
+.for-ie {
   display: none;
   text-align: left;
   color: #fff;
