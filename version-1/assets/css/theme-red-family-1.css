@@ -60,7 +60,8 @@
 /* Buttons in the Section bottom (Download Cv and Hire me Buttons) */
 .button-about-container > a
 {  color: #fff ; }
-
+.hero-contents > a.download-cv-btn {
+  border: 3px solid #f86262;}
 
 /*===========> Resume Section [3-] (Education - Certificates - Skills -Work History )  <=============== */
 

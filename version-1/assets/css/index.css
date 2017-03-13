@@ -20,7 +20,7 @@ font-size: 20px;
   left: 0px;
   right: 0px;
   position: fixed;
-   
+
   z-index: 1000;
 }
 .loading {
@@ -127,10 +127,12 @@ font-size: 20px;
   -o-transition: all , linear , 0.5s;
   -moz-transition: all , linear , 0.5s;
   border:2px solid transparent;
+  border-radius: 30px;
+  -webkit-border-radius:30px;
+  -moz-border-radius:30px;
 }
 .but-btn:hover {
     border:2px solid #fff;
-
 }
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
@@ -154,8 +156,11 @@ font-size: 20px;
   background: rgba(0,0,0,0.9);
   position: relative;
 }
+.mask-black{
+  /*linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),*/
+}
 .heroSection {
-  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("../img/bg.jpg") ;
+  background-image: url("../img/bg.jpg") ;
   background-repeat: no-repeat;
   background-position: bottom bottom;
   background-size: cover;
@@ -311,8 +316,15 @@ font-size: 20px;
   left: 0px;
   right: 0px;
   position: absolute;
-
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.main-demos {
+  position: relative;
   z-index: 5;
+}
+.main-demos-2 {
+    z-index: 5;
 }
 .img-block-item b {
   color: #fff;

@@ -209,22 +209,21 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
 
 
 
-          //  Safari Browser Dedected
-        /*  var naviationB = navigator.userAgent.toLowerCase();
-          if (naviationB.indexOf('safari') != -1) {
-                if (naviationB.indexOf('chrome') <= -1) {
-                   // Delete cutting border from Image
-                   $('.img-block').css('border','0px');
-                   $('.client-img img').css('border-radius','0px');
-                }
-            }*/
-          // IE 9  Dedected
-          /*var ua = window.navigator.userAgent;
-           var msie = ua.indexOf("MSIE ");
-           if (msie > 0) // If Internet Explorer, return version number
-           {
-               if(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) == 9)
-                alert();
-           }*/
+    // Check about Safari Browser
+    var naviationB = navigator.userAgent.toLowerCase();
+    if (naviationB.indexOf('safari') != -1) {
+          if (naviationB.indexOf('chrome') <= -1) {
+             // Delete cutting border from Image
+             $('.img-block').css('border','0px');
+             // delete border and set radius in 30 px for client images
+             $('.client-img img').css({
+               'border':'0px',
+               'webkit-border-top-left-radius':'30px',
+               'webkit-border-top-right-radius':'30px',
+               'webkit-border-bottom-left-radius':'30px',
+               'webkit-border-bottom-right-radius':'30px'
+             });
+          }
+      }
 
 });

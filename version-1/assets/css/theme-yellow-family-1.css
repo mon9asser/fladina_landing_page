@@ -52,7 +52,8 @@
 /* Background Of Icon bar related Mobile Version and Small screens  */
 .icon-bar {background: #fff;}
  /*===================================> About (Section) [2-] About Me  <================================ */
-
+ .hero-contents > a.download-cv-btn {
+   border: 3px solid #fcd06c;}
  /* About me Title */
 .about-me-title-color{  color: #222; }
 /* About me paragraphs */

@@ -97,7 +97,8 @@
 .work-history-body > .job-name > .title-job {color:#999;}
 /* Patagraph Of Job */
 .work-history-body > .job-details {color:#222;}
-
+.hero-contents > a.download-cv-btn {
+  border: 3px solid #4097c4;}
 
 /*====================================> Portfolio Section <======================================= */
 .portfolio-main-title {color: #1E8BC3;}

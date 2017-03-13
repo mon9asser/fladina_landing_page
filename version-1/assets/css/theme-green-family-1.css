@@ -77,7 +77,8 @@
 .graduation-block > h5.graduation-block-title {color: #666;}
 /*paragraph Color*/
 .graduation-block > .paragraphs {color: #222;}
-
+.hero-contents > a.download-cv-btn {
+  border: 3px solid #74ca74;}
 
 /*<<<<<<<<<< [2]-Certificates Block >>>>>>>>> */
 /*Title Of Certificate*/
