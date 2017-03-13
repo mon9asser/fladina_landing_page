@@ -238,7 +238,8 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           $('.loading-page').html('<b>Loading ... </b>');
           // Fix Navbar to be full container
           $('#navigation-bar').addClass('ie-version-9');
-
+          // Display Label of input Forms
+          $('ForIe').css({'display':'block'});
         }
     }else // Other Browsers !!
     $('.loading').fadeIn();
