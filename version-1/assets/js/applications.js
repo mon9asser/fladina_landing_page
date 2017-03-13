@@ -121,7 +121,7 @@ $(window).scroll(function(){
     $('.fill-indicator').bind('inview', function (event, visible) {
         if (visible == true) {
           var $skills = $('.fill-indicator');
-
+          var $skillValue ;
            $skills.each(function(){
              // get value from attribute
               $skillValue = $(this).attr('data-indicator-value') ;
@@ -237,7 +237,7 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           // Store " Loading ... " Inside Loading Page
           $('.loading-page').html('<b>Loading ... </b>');
         }
-    }else
+    }else // Other Browsers !!
     $('.loading').fadeIn();
 
 });
