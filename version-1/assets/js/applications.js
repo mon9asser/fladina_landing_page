@@ -237,8 +237,8 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           // Store " Loading ... " Inside Loading Page
           $('.loading-page').html('<b>Loading ... </b>');
           // Fix Navbar to be full container
-          $('#navigation-bar')addClass('ie-version-9');
-           
+          $('#navigation-bar').addClass('ie-version-9');
+
         }
     }else // Other Browsers !!
     $('.loading').fadeIn();
