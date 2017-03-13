@@ -209,14 +209,25 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
 
 
 
-    // Check about Safari Browser
-    var naviationB = navigator.userAgent.toLowerCase();
-    if (naviationB.indexOf('safari') != -1) {
-          if (naviationB.indexOf('chrome') <= -1) {
-             // Delete cutting border from Image
-             $('.img-block').css('border','0px');
-             $('.client-img img').css('border-radius','0px');
-          }
-      }
+          //  Safari Browser Dedected
+          var naviationB = navigator.userAgent.toLowerCase();
+          if (naviationB.indexOf('safari') != -1) {
+                if (naviationB.indexOf('chrome') <= -1) {
+                   // Delete cutting border from Image
+                   $('.img-block').css('border','0px');
+                   $('.client-img img').css('border-radius','0px');
+                }
+            }
+          // IE 9  Dedected
+          var ua = window.navigator.userAgent;
+           var msie = ua.indexOf("MSIE ");
 
+           if (msie > 0) // If Internet Explorer, return version number
+           {
+               alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+           }
+           else  // If another browser, return 0
+           {
+               alert('otherbrowser');
+           }
 });
