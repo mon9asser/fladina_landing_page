@@ -221,13 +221,10 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           // IE 9  Dedected
           var ua = window.navigator.userAgent;
            var msie = ua.indexOf("MSIE ");
-
            if (msie > 0) // If Internet Explorer, return version number
            {
-               alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+               if(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) == 9)
+                alert();
            }
-           else  // If another browser, return 0
-           {
-               alert('otherbrowser');
-           }
+
 });
