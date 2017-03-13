@@ -299,7 +299,7 @@ margin: 0px auto;
   text-align: center;
 }
 .loading {
-  display: block;
+  display: none;
   position: absolute;
   margin:0px auto;
   line-height: 2;

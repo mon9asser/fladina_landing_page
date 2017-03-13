@@ -237,6 +237,7 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           // Store " Loading ... " Inside Loading Page
           $('.loading-page').html('<b>Loading ... </b>');
         }
-    }
+    }else
+    $('.loading').fadeIn();
 
 });
