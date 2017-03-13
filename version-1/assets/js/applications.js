@@ -232,7 +232,7 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
     if (msie > 0) // If Internet Explorer, return version number
     {
       var versions = parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) ;
-      if(versions <= 9)
+      if(versions <= 10)
         {
           // Store " Loading ... " Inside Loading Page
           $('.loading-page').html('<b>Loading ... </b>');
