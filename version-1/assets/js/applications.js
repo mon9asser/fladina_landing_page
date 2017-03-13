@@ -1,6 +1,6 @@
 
 $(document).ready(function(){
-
+          "use strict";
 
   // set scroll bottom as a foxed
   $('html ,body').animate({
@@ -225,5 +225,9 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
              });
           }
       }
+    // Showing The Placeholder up the Texts in span ( All browsers less than IE 11 )
+    if($.browser.msie && parseFloat($.browser.version)&lt;10){
+      alert();
+    }
 
 });

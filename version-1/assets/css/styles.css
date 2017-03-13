@@ -1209,11 +1209,16 @@ text-align: center;
 --------------------------------------------------------------------------------------------*/
 
 /* First Row show the information like phone number and email and so on*/
-.mani-info-contact {
+.mani-info-contact , .ForIe {
     display: block;
     overflow: hidden;
     margin: 0px auto;
     width: 95%;
+}
+.ForIe {
+  display: none;
+  text-align: left;
+  color: #fff;
 }
 .mani-info-contact a, .mani-info-contact a:hover, .mani-info-contact a:focus {
     color: #fff;
