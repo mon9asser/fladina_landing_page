@@ -282,6 +282,22 @@ margin: 0px auto;
   z-index: 1000;
   text-align: center;
 }
+/*This one for IE 9 and all versions from less than 9*/
+.loading-page > b {
+  display: block;
+  position: absolute;
+  margin:0px auto;
+  line-height: 2;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  top: 45%;
+  height: 30px;
+  overflow: hidden;
+  width: 115px;
+  background: transparent;
+  text-align: center;
+}
 .loading {
   display: block;
   position: absolute;
