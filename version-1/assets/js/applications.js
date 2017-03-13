@@ -231,7 +231,9 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
 
     if (msie > 0) // If Internet Explorer, return version number
     {
-        alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
+      var versions = parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) ;
+      if(versions <= 9)
+        alert("Version "+versions);
     }
 
 });
