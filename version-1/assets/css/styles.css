@@ -440,6 +440,11 @@ box-shadow: 0px 0px 2px 0px #fff;
   margin:0px auto;
   display: block;
 }
+.ie-version-9{
+  width: 100% !important;
+  display: block !important;
+
+}
 .navbar-nav>li>a {
   font-family: 'Roboto' , sans-serif;
   font-weight: lighter;
