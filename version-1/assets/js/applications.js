@@ -210,21 +210,21 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
 
 
           //  Safari Browser Dedected
-          var naviationB = navigator.userAgent.toLowerCase();
+        /*  var naviationB = navigator.userAgent.toLowerCase();
           if (naviationB.indexOf('safari') != -1) {
                 if (naviationB.indexOf('chrome') <= -1) {
                    // Delete cutting border from Image
                    $('.img-block').css('border','0px');
                    $('.client-img img').css('border-radius','0px');
                 }
-            }
+            }*/
           // IE 9  Dedected
-          var ua = window.navigator.userAgent;
+          /*var ua = window.navigator.userAgent;
            var msie = ua.indexOf("MSIE ");
            if (msie > 0) // If Internet Explorer, return version number
            {
                if(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) == 9)
                 alert();
-           }
+           }*/
 
 });
