@@ -226,8 +226,12 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           }
       }
     // Showing The Placeholder up the Texts in span ( All browsers less than IE 11 )
-    if($.browser.msie && parseFloat($.browser.version)&lt;10){
-      alert();
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+
+    if (msie > 0) // If Internet Explorer, return version number
+    {
+        alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
     }
 
 });
