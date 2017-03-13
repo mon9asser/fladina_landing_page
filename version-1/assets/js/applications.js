@@ -238,8 +238,7 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
           $('.loading-page').html('<b>Loading ... </b>');
           // Fix Navbar to be full container
           $('#navigation-bar')addClass('ie-version-9');
-          $('.navbar-container').css({'background':'transparent'});
-          $('#navbar-menu').css({'background':'#F64747','width':'90%','margin':'0px auto'});
+           
         }
     }else // Other Browsers !!
     $('.loading').fadeIn();
