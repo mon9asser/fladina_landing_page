@@ -233,7 +233,10 @@ $('.img-shape img , .col-xs-sm-fit-contents').bind('inview', function (event, vi
     {
       var versions = parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))) ;
       if(versions <= 9)
-        alert("Version "+versions);
+        {
+          // Store " Loading ... " Inside Loading Page
+          $('.loading-page').html('<b>Loading ... </b>');
+        }
     }
 
 });

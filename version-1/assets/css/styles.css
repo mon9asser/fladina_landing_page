@@ -280,6 +280,7 @@ margin: 0px auto;
   position: fixed;
   display: block;
   z-index: 1000;
+  text-align: center;
 }
 .loading {
   display: block;
